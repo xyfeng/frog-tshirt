@@ -1,0 +1,70 @@
+<html>
+<head>
+  <style>
+    body {
+      background: #222;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="main" style="-webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 1600px; height: 1600px;">
+    <img id="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWCAIAAADaNPagAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDhGMkFGRjlGOTZBMTFFM0FGMjk5MDcxQzAyRDBBNjgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDhGMkFGRjhGOTZBMTFFM0FGMjk5MDcxQzAyRDBBNjgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzE3REQ1RTVGOTU2MTFFMzg5OTJGQkE4NDMxM0MzN0EiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzE3REQ1RTZGOTU2MTFFMzg5OTJGQkE4NDMxM0MzN0EiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5KyrpUAAAJPElEQVR42uyad0xV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">
+    <!-- <img id="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAmCAYAAACYsfiPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkMxN0RENUU1Rjk1NjExRTM4OTkyRkJBODQzMTNDMzdBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkMxN0RENUU2Rjk1NjExRTM4OTkyRkJBODQzMTNDMzdBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzE3REQ1RTNGOTU2MTFFMzg5OTJGQkE4NDMxM0MzN0EiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzE3REQ1RTRGOTU2MTFFMzg5OTJGQkE4NDMxM0MzN0EiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz56DP3zAAAJiklEQVR42tRaBWwWSxDeQnF3CO6WAMEhuLs7wSkaILi7BAjuGtyDu1MobsWtOC1uP8Eh8+abx17ufv/7Wpo3ydL773b3dvybOfyIKFQplUB5QTt27FB37txRN2/eVMmTJ1cBAQEqR44c6n9EnxR5Sd27d6c0adJQrFixiBcaY/bs2RQR9P37d3r69CldvHiRLl26RJ8/f6bIIDBs8zTp1KlTlDBhQjpy5Ahlz57dwjBG+fLlaerUqXTv3j2n60NDQ2n//v20bNkyGjx4MFWvXp2yZctGqVOnpqRJk5Kfn5/DnsmSJaMyZcrQ3Llz6evXrxHFr80P/3gy6ZEjR6o4ceKo5s2bq0yZMrm1mUKFCilmRn379k3MH0KF2f/48UMx05a5cAvsx8ypFClSqJQpU6rNmzerx48fW+axZSm2MNWlSxeZ+19N2qOGobmiRYtSpUqVHDThasSOHZsaN25Me/bsoYMHD9Lw4cMpfvz44hLQGrRuiN1mozNnztDkyZNlnas9YWV9+vQhjiGRq+Fq1ao5aMcTlStXTrVo0UIFBgaqNWvWWJ7lyZNHffjwQYWFhTmsS5IkiVgJm7G6fPmy+vLli9P9WfiqVKlSioUo1vTmzRv169cvxYIVS3GlYY8M161bV71//16tW7dOVahQQd29e9d4VqBAAcVSV8ePH3fJONbUqFFDFSlSREyYtanOnj2rnj17JgeNFy+eypcvn7gBDpoxY0bFPi1rwcSJEyfU9u3bZc2DBw/ENZxR27ZtZb9Pnz6pXbt2hc+kWdJiSqwNmjJlisW8xo0bR+/evSPWvlsT7NGjB40aNYqmTZtGnNbo6tWrxAcLlz2+ePGCGjRoYHkHC4xat25NbFHEliPvfPv2rUuTtjDM0qPbt2/LdXBwsGwIv4sRIwbVrFlT7nMgEgGAcufOLXMmTJhA586dowsXLtCTJ0+oX79+Hn0cB2PNUokSJSTyly5dWtZ6op49e1r2wdlwHoxBgwbJvSxZskhc8MjwwIEDqVatWlSnTh0qXrw4LVmyxNiYzVe03KxZM5o1a5bkTNzfvXs3semJ9g4dOkQrV66UvfDX2wCnR9asWT0yjKBlv65kyZLGc40TtmzZIr/Zr+njx4/OGV6/fr0AjMSJE8sikJaa/YBkp0+fLnMgIMyDmQ8dOpRGjBgh9ytXruwz08jV7qh+/frGXORpCB/XnN6IU5tcx40bV+bC6vTc06dPOzIMun79uvgKtN2hQwe5B5+YM2eO+In5cBwgJJWY78Ey4EtXrlyRtfBfDSwAODgIumWY870gLXt6+fIlDRgwwDKXg6k8swcuGTJkoCFDhsg1fJ6zhVxz4LO5DFpbt26VSZzsLfePHj1KDCQMC4CZa8maB4T26NEjQViQtD6cvZZcDQTD9u3bU8uWLcXPoTXz802bNsleq1atMu5xSpP7QGn4PX/+fOOdEALf+5dhBCuAC2hl2LBhlChRIlkQLVo0+ZsgQQJasGCB4FxNmNOpUyeBfTjYpEmTqH///tS1a1cBFqDMmTMbPsZpzQIR4a++mjs0yWjP8MmQkBAJqvqswOM7d+6U37A8EIAPCEri1GdTa9eutY0dO5batWtnbAxEtXHjRnr+/DmdPHmS0qdPLxKCeQIzc56j8+fPixbw/MCBAyJpICr4IOdqatWqlcOBYQmLFy82gkm6dOl8YhhaRpDkvC+CNRcycAPsiWvO/fIOmDL4gDJxn1OiDUnfBrOBjyKdwC/tCXlz/Pjx1KtXL4GI0OTy5cvFfLZt22aZ+/PnT/FVvMDf318s4+HDhxLY9OEQ6UGMmR2qr/AMpEVQ2rRpDVeDYGBhICgMaU+CFqMXG9TvDT5F9AUTbdq0oSZNmlCuXLkof/78xChHzDgoKEj89datW+LDkDgI1tCoUSOHg+pYYD/giwhe3jCrmYK/4jesTcpAvmaUJlaKa6RRp1HaHcG/sfjYsWPEVQ3lzZvXeDHy98yZM6WENJOOlubB1ZdYx969e0XQKBwQ3BAAoXEwwdBT3lG1alW3DN+4ccNgEMEQhEAbPXp0uS5YsKDEG6d52B0hNcHka9euLcFBE8wJyCZnzpySFwHzGjZsSIydJdiZD4d0xRYl6xBc4PewBqAi+CB8//79+zIXrqAJwkH9bM/sHzMV+KpNGS6plaIFoXGBTwwjgo8ePVp8GQ0BC17jAyNKA2igoHelDURrNAD+pAinA4SABwbtCRHaPJerKYOpDRs2yDVwgN5HW9e1a9d8ZxjEZR7NmzePfv/+7XEucnDfvn0pZsyYPgUgUL169YgrLIc9q1SpYsxDOtIWhtYTCFaBZ3APLQi4iEssHRkEX4RvI3KjpWM2bwjEDEIAazVyMhcSKFgQae0Rmc4GYBiZBteFCxe2MK8zwl9j2L5Rt2LFCvE9pCkEuNWrVxtMIKojT+Ma1oQUqLsssBRoE9nBnYUAROE9+rcuIqKEYTMhVUELKBM1zgYh0IFJaCwgIEACpTZREBiAmepAZQYlCIBmP0Z01qkxyhk2Q1QcDsUBUJH2Y1eENIaUAzPHNYoDlIyakCG0EDTEjXKGUZj07t1bGoM4GMCL9l1dcjqjhQsXSlmqGTIX+Uh38F/9DOWixwZARJorsC7jdJRkDs9R5gGD67IOhwVC8qRdFCBoRABYaNADwFOxYkUHXwbi+2sMjxkzRl46Y8YMicQ4FILT0qVLqVu3blK+IXDpMlCnEMzxlrCXPZPob+Fv586dvetpRSQBHaFFtGjRIuNAxYoVk85Ix44d5TcCE/I1wErZsmU97on8/+rVK2lOIMgB/UHjKA3R5zaDjr/OsJmaNm0qRYf94VFFwSd1AeCKUK0BV5t7bAAmcAsUILozc/jw4ahnGJJHHQxtAp7Cv40PW66Di4XQkYRQ4BqIykg/aEbAj5GO0GlFsNMgBqnsrzIcGBhI+/btk08tWiOpUqWy1K8o14C2vCUEIXNBoVEc9kOZCrQF4eEv7qHyinSGYVIoDlCdaOaQflD+oRJChaSDFfpUdijIZwIwwV4TJ0407qGNhECJ+2g6mttSEc4wYCMkDCZNJZkD6TSCaB4eAnoC7nYCHS2NQjT6gdo0AosUk0Ydat8EcEa6vvWV0P1E7xvM6N6VK9wOLIC+1uvXr6MeWiK96Dxs+jLgVSMCjOoGojty8iFdPpdSVP2HC8a6KigoSHGkVeyH8lHcGwoJCZGBz7i+kj+PMG//U0tEEz5xBgcHyxd/Lv+8XodPqxjh+R8A/wgwAA1RrNSbmTosAAAAAElFTkSuQmCC"> -->
+  </canvas>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://dl.dropboxusercontent.com/u/11819416/lib/paper/paper-full.min.js"></script>
+  <script>
+    paper.install(window);
+    window.onload = function() {
+      paper.setup('main');
+      var raster = new Raster('logo');
+      raster.visible = false;
+      // The size of our grid cells:
+      var gridSize = 8;
+      var offsetSize = 0.5;
+
+      raster.on('load', function() {
+        var posX, posY;
+        for (var x = 0; x < raster.width; x++) {
+          var onePath = new Path();
+          // onePath.strokeColor = 'black';
+          onePath.fillColor = 'white';
+          onePath.closed = true;
+          onePath.add(new Point(x * gridSize - 5, -4));
+          for (var y = 0; y < raster.height & x + y < raster.width; y++) {
+            // Get the color of the pixel:
+            var color = raster.getPixel(x + y, y);
+            posX = (x + y) * gridSize;
+            posY = y * gridSize;
+            onePath.add(new Point(posX - 4, posY - 4));
+            onePath.add(new Point(posX + offsetSize * (1 - color.gray), posY - offsetSize * (1 - color.gray)));
+            onePath.add(new Point(posX + 4, posY + 4));
+          }
+          onePath.add(new Point(posX + 3, posY + 4));
+        }
+        for (var y = 1; y < raster.height; y++) {
+          var onePath = new Path();
+          // onePath.strokeColor = 'black';
+          onePath.fillColor = 'white';
+          onePath.closed = true;
+          onePath.add(new Point(-5, y * gridSize - 4));
+          for (var x = 0; x < raster.width & x + y < raster.height; x++) {
+            // Get the color of the pixel:
+            var color = raster.getPixel(x, x + y);
+            var posX = x * gridSize;
+            var posY = (x + y) * gridSize;
+            onePath.add(new Point(posX - 4, posY - 4));
+            onePath.add(new Point(posX + offsetSize * (1 - color.gray), posY - offsetSize * (1 - color.gray)));
+            onePath.add(new Point(posX + 4, posY + 4));
+          }
+          onePath.add(new Point(posX + 3, posY + 4));
+        }
+        project.activeLayer.position = view.center;
+      });
+    }
+  </script>
+</body>
+
+</html>
